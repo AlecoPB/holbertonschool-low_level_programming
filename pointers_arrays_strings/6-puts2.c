@@ -11,22 +11,22 @@ const char *s = str;
 if (*s)
 {
 putchar(*s);
-if (*(s+1))
+if (*(s + 1))
 {
-  s = s + 2;
+s += 2;
 }
 while (*s)
 {
 putchar(*s);
-if (*(s+1))
+if (*(s + 1))
 {
-s = s + 2;
+s += 2;
 }
 else
 {
 break;
 }
 }
-putchar('\n');
 }
+putchar('\n');
 }
