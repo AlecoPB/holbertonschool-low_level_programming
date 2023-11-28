@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  *_puts - Prints a string to the standart output stdout
  *@str: The string to be printed
@@ -7,7 +8,6 @@
 void _puts(char *str)
 {
 const char *s = str;
-str;
 while (*s)
 {
 putchar(*s);
