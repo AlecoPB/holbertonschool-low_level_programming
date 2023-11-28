@@ -1,4 +1,4 @@
-i#include <stdio.h>
+#include <stdio.h>
 /**
  *puts2 - Prints every other character on a string
  *@str: The string to be printed
