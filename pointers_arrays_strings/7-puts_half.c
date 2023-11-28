@@ -6,6 +6,7 @@
 
 void puts_half(char *str)
 {
+int lenght;
 const char *s = str;
 while (*s)
 {
