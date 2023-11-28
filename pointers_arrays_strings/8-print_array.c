@@ -8,9 +8,13 @@
 
 void print_array(int *a, int n)
 {
-const int *arr = a;
-for (int *i = a; i < sizeof(int) * n; i += sizeof(int))
+int *arr = a + n;
+for (int *i = a; i < arr; ++i)
 {
-printf("%d, ", arr + i);
+printf("%d", *i);
+if (i < arr - 1
+{
+printf(", ");
+}
 }
 }
