@@ -12,7 +12,7 @@ while (*src)
 {
 *dest = *src;
 ++src;
-++end;
+++dest;
 }
 *dest = *src;
 }
