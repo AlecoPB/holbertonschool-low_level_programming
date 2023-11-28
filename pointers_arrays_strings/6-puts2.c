@@ -8,7 +8,7 @@
 void puts2(char *str)
 {
 const char *s = str;
-putchar *s;
+putchar(*s);
 s += 2;
 while (*s)
 {
