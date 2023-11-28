@@ -12,7 +12,7 @@ int *arr = a + n;
 for (int *i = a; i < arr; ++i)
 {
 printf("%d", *i);
-if (i < arr - 1
+if (i < arr - 1)
 {
 printf(", ");
 }
