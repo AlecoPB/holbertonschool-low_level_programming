@@ -7,16 +7,16 @@
 
 void print_rev(char *s)
 {
-char *s = str;
-while (*s)
+char *str = s;
+while (*str)
 {
-++s;
+++str;
 }
---s;
-while (s >= str)
+--str;
+while (str >= s)
 {
-putchar(*s);
---s;
+putchar(*str);
+--str;
 }
 putchar('\n');
 }
