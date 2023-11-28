@@ -1,6 +1,6 @@
 /**
  *reset_to_98 - Updates pointed to value to 98
- *@n - Value to update
+ *@*n - Value to update
  *
  *Return: nothing
  */
