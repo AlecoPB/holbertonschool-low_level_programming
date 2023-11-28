@@ -18,5 +18,5 @@ if (i < arr - 1)
 printf(", ");
 }
 }
-printf("/n");
+printf("\n");
 }
