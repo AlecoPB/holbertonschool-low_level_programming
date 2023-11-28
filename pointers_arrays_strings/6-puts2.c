@@ -11,7 +11,6 @@ const char *s = str;
 if (*s)
 {
 putchar(*s);
-}
 if (*(s+1))
 {
   s = s + 2;
@@ -29,4 +28,5 @@ break;
 }
 }
 putchar('\n');
+}
 }
