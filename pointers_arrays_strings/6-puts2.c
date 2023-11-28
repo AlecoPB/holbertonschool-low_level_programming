@@ -8,17 +8,20 @@
 void puts2(char *str)
 {
 const char *s = str;
+if (*s)
+{
 putchar(*s);
+}
 if (*(s+1))
 {
-s += 2;
+s + = 2;
 }
 while (*s)
 {
 putchar(*s);
 if (*(s+1))
 {
-s += 2;
+s + = 2;
 }
 else
 {
