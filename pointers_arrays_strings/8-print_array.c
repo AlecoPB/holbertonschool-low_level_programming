@@ -18,4 +18,5 @@ if (i < arr - 1)
 printf(", ");
 }
 }
+putchar("/n");
 }
