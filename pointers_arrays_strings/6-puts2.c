@@ -1,4 +1,4 @@
-#include <stdio.h>
+i#include <stdio.h>
 /**
  *puts2 - Prints every other character on a string
  *@str: The string to be printed
@@ -14,14 +14,14 @@ putchar(*s);
 }
 if (*(s+1))
 {
-s + = 2;
+  s = s + 2;
 }
 while (*s)
 {
 putchar(*s);
 if (*(s+1))
 {
-s + = 2;
+s = s + 2;
 }
 else
 {
