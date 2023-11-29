@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "lists.h"
 
 /**
@@ -15,7 +16,7 @@ dlistint_t *new_node;
 if (head == NULL)
 return NULL;
 
-new_node = malloc(sizeof(dlistint_t))M
+new_node = malloc(sizeof(dlistint_t));
 if (new_node == NULL)
 return NULL;
 
