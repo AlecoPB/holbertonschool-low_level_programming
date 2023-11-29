@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
- *dlistint_t *instert_dnodeint_at_index - inserts a node at index
+ *instert_dnodeint_at_index - inserts a node at index
  *@h: pointer to the list
  *@idx: where to insert
  *@n: Element to be added
@@ -34,9 +34,9 @@ else
 {
 current = *h;
 for (i = 0; i < idx && current != NULL; i++)
-
 current = current->next;
- if (i < idx && current == NULL)
+
+if (i < idx && current != NULL)
 {
 free(new_node);
 return (NULL);
@@ -50,5 +50,15 @@ else
 *h = new_node;
 current->prev = new_node;
 }
+else
+{
+current = *h;
+while (current->next != NULL)
+current = current->next;
+new_node->prev = current;
+new_node->next = NULL;
+current->next = new_node;
+}
+
 return (new_node);
 }
