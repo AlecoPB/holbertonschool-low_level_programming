@@ -41,9 +41,6 @@ new_node = malloc(sizeof(dlistint_t));
 
  if (i < idx && current == NULL)
    {
-     current = *h;
-     while (current->next != NULL)
-       current = current->next;
      current->next = new_node;
      new_node->prev = current;
      new_node->next = NULL;
