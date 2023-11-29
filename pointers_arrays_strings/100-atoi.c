@@ -17,7 +17,7 @@ while (*s)
 {
 if (*s >= '0' && *s <= '9')
 {
-if sign > 0
+if (sign > 0)
 res = res * 10 + (*s - '0');
 else
 res = res * 10 - (*s - '0');
