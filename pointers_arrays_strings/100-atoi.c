@@ -13,7 +13,9 @@ while (*s)
 {
 if (*s == '-')
 sign *= -1;
-++s;
+else if (*s >= '0' && *s <= '9')
+break;
+++s:
 }
 s = start;
 while (*s)
