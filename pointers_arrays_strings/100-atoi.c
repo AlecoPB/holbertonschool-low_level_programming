@@ -15,7 +15,7 @@ if (*s == '-')
 sign *= -1;
 else if (*s >= '0' && *s <= '9')
 break;
-++s:
+++s;
 }
 s = start;
 while (*s)
