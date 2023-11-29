@@ -13,6 +13,7 @@ while (*s)
 {
 if (*s == '-')
 sign *= -1;
+++s;
 }
 s = start;
 while (*s)
