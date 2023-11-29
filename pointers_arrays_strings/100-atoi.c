@@ -13,7 +13,7 @@ while (*s)
 if (*s == '-')
 sign *= -1;
 if (*s >= '0' && *s <= '9')
-res * 10 + (*s - '0');
+rest = res * 10 + (*s - '0');
 ++s;
 }
 return (sign *res);
