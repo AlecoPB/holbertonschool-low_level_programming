@@ -17,7 +17,7 @@ return 0;
 
 while (head != NULL)
 {
-sum += *head;
+sum += head->n;
 head = head->next;
 }
 
