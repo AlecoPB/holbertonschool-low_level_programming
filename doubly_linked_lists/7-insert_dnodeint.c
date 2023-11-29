@@ -33,7 +33,7 @@ new_node->next = NULL;
 else
 {
 current = *h;
-for (i = 0; i < index && current != NULL; i++)
+for (i = 0; i < idx && current != NULL; i++)
 
 current = current->next;
  if (i < idx && current == NULL)
