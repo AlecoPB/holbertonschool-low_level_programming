@@ -40,7 +40,7 @@ if (i < idx && current != NULL)
 {
 free(new_node);
 return (NULL);
-
+}
 new_node->next = current;
 new_node->prev = current->prev;
 if (current->prev != NULL)
@@ -48,7 +48,6 @@ current->prev->next = new_node;
 else
 *h = new_node;
 current->prev = new_node;
-}
 }
 else
 {
