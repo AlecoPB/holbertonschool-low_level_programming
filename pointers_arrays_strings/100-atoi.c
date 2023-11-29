@@ -11,13 +11,16 @@ int res = 0, sign = 1;
 while (*s)
 {
 if (*s == '-')
-{
 sign *= -1;
-res *= sign;
 }
-else if (*s >= '0' && *s <= '9')
+while (*s)
 {
+if (*s >= '0' && *s <= '9')
+{
+if sign > 0
 res = res * 10 + (*s - '0');
+else
+res = res * 10 - (*s - '0');
 if (*(s + 1) < '0' || *(s + 1) > '9')
 {
 break;
