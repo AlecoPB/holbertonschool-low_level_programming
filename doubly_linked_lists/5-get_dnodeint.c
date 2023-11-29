@@ -18,13 +18,10 @@ for (i = 0; i <= index; i++)
 {
 if (*head == NULL)
 {
-*index_node = NULL;
-break;
+return (NULL);
 }
 head = head->next;
 }
-if (*index_node != NULL)
-*index_node = *head;
 
-return (*index_node);
+return (head);
 }
