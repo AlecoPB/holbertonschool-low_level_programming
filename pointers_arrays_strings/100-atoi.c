@@ -7,12 +7,14 @@
 
 int _atoi(char *s)
 {
+char *start = s;
 int res = 0, sign = 1;
 while (*s)
 {
 if (*s == '-')
 sign *= -1;
 }
+s = start;
 while (*s)
 {
 if (*s >= '0' && *s <= '9')
