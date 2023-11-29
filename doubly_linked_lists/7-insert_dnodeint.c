@@ -45,6 +45,8 @@ new_node = malloc(sizeof(dlistint_t));
      return (NULL);
    }
 
+ if (current != NULL)
+   {
  new_node->next = current;
  new_node->prev = current->prev;
  if (current->prev != NULL)
@@ -53,6 +55,12 @@ new_node = malloc(sizeof(dlistint_t));
    *h = new_node;
 
  current->prev = new_node;
- 
+   }
+ else
+   {
+     free(new_node);
+     return (NULL);
+   }
+
 return (new_node);
 }
