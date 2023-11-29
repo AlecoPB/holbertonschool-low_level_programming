@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "lists.h"
+
+/**
+ *get_dnodeint_at_index - Gives you the value stored in an index
+ *@head: pointer to the list
+ *@index: index to recover the value from
+ *Return: value recovered
+ */
+
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
+{
+dlistint_t *index_node;
+unsigned int i;
+ 
+for (i = 0; i <= index; i++)
+{
+if (*head == NULL)
+{
+*index_node = NULL;
+break;
+}
+head = head->next;
+}
+if (*index_node != NULL)
+*index_node = *head;
+
+return (*index_node);
+}
