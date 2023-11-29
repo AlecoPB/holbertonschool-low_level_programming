@@ -51,7 +51,7 @@ else
 *h = new_node;
 current->prev = new_node;
 }
-
+}
 else
 {
 current = *h;
@@ -60,7 +60,6 @@ current = current->next;
 new_node->prev = current;
 new_node->next = NULL;
 current->next = new_node;
-}
 }
 
 }
