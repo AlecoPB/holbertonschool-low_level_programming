@@ -31,7 +31,7 @@ new_node = malloc(sizeof(dlistint_t));
      new_node->prev = NULL;
      if (*h != NULL)
        (*h)->prev = new_node;
-     h* = new_node;
+     *h = new_node;
      return (new_node);
    }
 
