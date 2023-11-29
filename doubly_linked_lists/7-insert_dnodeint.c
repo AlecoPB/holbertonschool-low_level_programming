@@ -46,15 +46,19 @@ new_node->prev = current->prev;
 if (current->prev != NULL)
 current->prev->next = new_node;
 else
+{
 *h = new_node;
 current->prev = new_node;
 }
+else
+{
 current = *h;
 while (current->next != NULL)
 current = current->next;
 new_node->prev = current;
 new_node->next = NULL;
 current->next = new_node;
-
+}
+}
 return (new_node);
 }
