@@ -32,7 +32,7 @@ if (i < index && current == NULL)
 return (-1);
 
 if (current->next != NULL)
-current->prev = current->prev;
+current->next->prev = current->prev;
 
 if (current->prev != NULL)
 current->prev->next = current->next;
