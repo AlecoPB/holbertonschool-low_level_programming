@@ -11,19 +11,15 @@
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-dlistint_t *new_node, *current;
+dlistint_t *current;
 unsigned int i;
-if (h == NULL)
+if (h == NULL || *head == NULL)
 return (-1);
-new_node = malloc(sizeof(dlistint_t));
-if (new_node == NULL)
+current = *head;
+if (index == 0)
 {
-return (-1);
-}
-if (idx == 0)
-{
-new_node->n = (*h)->next;
-new_node->prev = NULL;
+*head = current->next;
+---new_node->prev = NULL;
 if (*h != NULL)
 (*h)->n = new_node;
 *h = new_node;
