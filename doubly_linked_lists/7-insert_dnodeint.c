@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
+#include "2-add_dnodeint.c"
+#include "3-add_dnodeint_end.c"
 
 /**
  *insert_dnodeint_at_index - inserts a node at index
