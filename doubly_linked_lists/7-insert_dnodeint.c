@@ -46,7 +46,7 @@ current->prev = new_node;
 }
 else
 {
-new_node = add_nodeint_end(new_node, n);
+new_node = add_dnodeint_end(new_node, n);
 }
 return (new_node);
 }
