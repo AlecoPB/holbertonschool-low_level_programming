@@ -19,25 +19,24 @@ current = *head;
 if (index == 0)
 {
 *head = current->next;
----new_node->prev = NULL;
-if (*h != NULL)
-(*h)->n = new_node;
-*h = new_node;
+if (current->next != NULL)
+current->next->prev = NULL;
+free(current);
 return (1);
 }
-current = *h;
+
 for (i = 0; i < idx && current != NULL; i++)
 current = current->next;
+
 if (i < idx && current == NULL)
-{
-return (1);
-}
-new_node->n = current;
+return (-1);
+
+if (current->next != NULL)
 new_node->prev = current->prev;
+
 if (current->prev != NULL)
-current->prev->next = new_node;
-else
-*h = new_node;
-current->prev = new_node;
+current->prev->next = current->next;
+
+free(current);
 return (1);
 }
